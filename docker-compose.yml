@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  # Dịch vụ cho cơ sở dữ liệu PostgreSQL
+  postgres:
+    image: postgres:17
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: url_shortener_db
+    ports:
+      - "5433:5433"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  # Dịch vụ cho ứng dụng Spring Boot
+  app:
+    container_name: url-shortener-app
+    # Build image từ Dockerfile trong thư mục hiện tại
+    build: .
+    ports:
+      - "8080:8080"
+      # Phụ thuộc vào postgres, đảm bảo postgres khởi chạy trước
+    depends_on:
+      - postgres
+  # Định nghĩa volume để lưu trữ dữ liệu database
+volumes:
+  postgres_data:
