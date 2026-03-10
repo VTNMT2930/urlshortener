@@ -403,13 +403,6 @@ curl -L http://localhost:8080/{shortCode}
 
 ---
 
-### 📊 Project Stats
-
-![GitHub repo size](https://img.shields.io/github/repo-size/VTNMT2930/urlshortener)
-![GitHub last commit](https://img.shields.io/github/last-commit/VTNMT2930/urlshortener)
-![GitHub issues](https://img.shields.io/github/issues/VTNMT2930/urlshortener)
-![GitHub stars](https://img.shields.io/github/stars/VTNMT2930/urlshortener)
-
 ---
 
 ### 🙏 Documentation
@@ -428,3 +421,4 @@ curl -L http://localhost:8080/{shortCode}
 Made with ❤️ by [VTNMT2930](https://github.com/VTNMT2930)
 
 </div>
+
