@@ -136,29 +136,6 @@ User Request → Controller → Service → Repository → Database
 ## 📂 Project Structure
 
 ```
-src/main/java/github/VTNMT2930/urlshortener/
-├── 📄 UrlshortenerApplication.java    # Main application entry point
-├── 📁 config/                         # Configuration classes
-├── 📁 controller/                     # REST API Controllers
-│   ├── UrlShortenerController.java    # Handle URL shortening requests
-│   └── RedirectController.java        # Handle redirect requests
-├── 📁 dto/                            # Data Transfer Objects
-│   ├── ShortenUrlRequest.java         # Request DTO for shortening
-│   ├── ShortenUrlResponse.java        # Response DTO for shortened URL
-│   └── ErrorResponse.java             # Error response DTO
-├── 📁 exception/                      # Exception Handling
-│   └── GlobalExceptionHandler.java    # Global exception handler
-├── 📁 model/                          # Entity Models
-│   └── UrlMapping.java                # URL mapping entity
-├── 📁 repository/                     # Data Access Layer
-│   └── UrlMappingRepository.java      # JPA repository interface
-└── 📁 service/                        # Business Logic Layer
-    ├── UrlShortenerService.java       # Service interface
-    └── UrlShortenerServiceImpl.java   # Service implementation
-```
-
-### Complete Project Structure
-```
 urlshortener/
 ├── 📄 docker-compose.yml              # Docker orchestration configuration
 ├── 📄 Dockerfile                      # Container build instructions
