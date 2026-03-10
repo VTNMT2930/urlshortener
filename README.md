@@ -112,7 +112,7 @@ docker ps
 ## 🏗 System Architecture
 
 <div align="center">
-  <img src="docs/Diagram.png" width="700"/>
+  <img src="docs/Diagram.png" width="500"/>
 </div>
 
 ### Flow Diagram
