@@ -205,17 +205,21 @@ urlshortener/
 
 ---
 
-### 🐳 Option 1: Run with Docker (Recommended)tion classes
-│   │   │   ├── 📁 controller/     # REST endpoints
-│   │   │   ├── 📁 dto/            # Data transfer objects
-│   │   │   ├── 📁 exception/      # Exception handlers
-│   │   │   ├── 📁 model/          # Entity models
-│   │   │   ├── 📁 repository/     # Data access layer
-│   │   │   └── 📁 service/        # Business logic
-│   │   └── 📁 resources/
-│   │       └── application.properties
-│   └── 📁 test/                   # Unit tests
-└── 📁 target/                     # Build output
+### 🐳 Option 1: Run with Docker (Recommended)
+
+**Bước 1:** Clone repository
+
+```bash
+git clone https://github.com/VTNMT2930/urlshortener.git
+cd urlshortener
+```
+
+**Bước 2:** Khởi chạy ứng dụng
+
+```bash
+docker-compose up -d
+```
+
 **Bước 3:** Verify deployment
 
 ```bash
@@ -234,30 +238,40 @@ curl http://localhost:8080/api/shorten
 ---
 
 ### 💻 Option 2: Run Locally (Without Docker)
-│   ├── ShortenUrlResponse.java
-│   └── ErrorResponse.java
-├── 📁 exception/           # Exception handling
-│   └── GlobalExceptionHandler.java
-├── 📁 model/               # Entity models
-│   └── UrlMapping.java
-├── 📁 repository/          # Database access
-│   └── UrlMappingRepository.java
-└── 📁 service/             # Business logic
-    ├── UrlShortenerService.java
-    └── UrlShortenerServiceImpl.java
+
+**Bước 1:** Clone repository
+
+```bash
+git clone https://github.com/VTNMT2930/urlshortener.git
+cd urlshortener
 ```
 
----
+**Bước 2:** Cài đặt PostgreSQL và tạo database
 
+```bash
+# Cài đặt PostgreSQL và tạo database
+createdb url_shortener_db
 ```
-## 🚀 Cài đặt
 
-### Yêu cầu hệ thống
+**Bước 3:** Cấu hình database
 
-- ☕ **Java 17** hoặc cao hơn
-- 🔧 **Maven 3.6+**
-- 🐳 **Docker** và **Docker Compose** (khuyến nghị)
-- 🐘 **PostgreSQL 17** (nếu không dùng Docker)
+Chỉnh sửa file `src/main/resources/application.properties`:
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/url_shortener_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
+
+**Bước 4:** Build và chạy ứng dụng
+
+```bash
+# Build project
+mvn clean install
+
+# Chạy ứng dụng
+mvn spring-boot:run
+```
 
 **Bước 5:** Test the application
 
@@ -302,7 +316,7 @@ VALUES
 
 ---
 
-## 🔌 API Endpointsord=your_password
+## 🔌 API Endpoints
 
 ### Base URL
 ```
