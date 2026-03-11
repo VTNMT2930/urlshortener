@@ -396,12 +396,12 @@ curl -L http://localhost:8080/{shortCode}
 
 ## 👨‍💻 Author
 
-**Vo Trung Nhan (VTNMT2930)**
+**Võ Trung Nhân**
 
-- GitHub: [@VTNMT2930](https://github.com/VTNMT2930)
-- Email: nhantrung297@gmail.com
-
----
+- 📧 Email: [nhantrung297@gmail.com](mailto:nhantrung297@gmail.com)
+- 💼 LinkedIn: [https://www.linkedin.com/in/vtn2907/](https://www.linkedin.com/in/vtn2907/)
+- 🐙 GitHub: [@VTNMT2930](https://github.com/VTNMT2930)
+- 🌐 Portfolio: [https://nhanit.io.vn/](https://nhanit.io.vn/)
 
 ---
 
@@ -421,4 +421,5 @@ curl -L http://localhost:8080/{shortCode}
 Made with ❤️ by [VTNMT2930](https://github.com/VTNMT2930)
 
 </div>
+
 
