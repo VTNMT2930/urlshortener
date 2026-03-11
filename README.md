@@ -415,11 +415,9 @@ curl -L http://localhost:8080/{shortCode}
 ---
 
 <div align="center">
-
-**⭐ Nếu bạn thấy project hữu ích, hãy cho một star! ⭐**
-
-Made with ❤️ by [VTNMT2930](https://github.com/VTNMT2930)
-
+  <p>Made with ❤️ by Nhân IT</p>
+  <p>⭐ Star this repo if you find it helpful!</p>
 </div>
+
 
 
